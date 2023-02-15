@@ -1,0 +1,18 @@
+PAYLOAD ADD CLIENTS
+{
+ "id_card": "0000000000000000",
+ "email": "san@mail.com",
+ "password": "123",
+ "name": "san"
+}
+BASE64 = ewogImlkX2NhcmQiOiAiMDAwMDAwMDAwMDAwMDAwMCIsCiAiZW1haWwiOiAic2FuQG1haWwuY29tIiwKICJwYXNzd29yZCI6ICIxMjMiLAogIm5hbWUiOiAic2FuIgp9
+
+PAYLOAD UPDATE CLIENTS
+{
+ "birht_place": "tangerang",
+ "birht_date": "1999-02-10",
+ "gender": "pria",
+ "family_status": 1,
+ "family_position": "suami"
+}
+BASE64 = ewogImJpcmh0X3BsYWNlIjogInRhbmdlcmFuZyIsCiAiYmlyaHRfZGF0ZSI6ICIxOTk5LTAyLTEwIiwKICJnZW5kZXIiOiAicHJpYSIsCiAiZmFtaWx5X3N0YXR1cyI6IDEsCiAiZmFtaWx5X3Bvc2l0aW9uIjogInN1YW1pIgp9
