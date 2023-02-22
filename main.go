@@ -15,10 +15,11 @@ func hello(c web.C, w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	goji.Get("/nasabah", P_ServicesNasabah.ServiceGetNasabahAll)
-	goji.Get("/nasabah/:id", P_ServicesNasabah.ServiceGetNasabahById)
-	goji.Post("/nasabah/:data", P_ServicesNasabah.ServiceAddNasabah)
-	goji.Put("/nasabah/:data", P_ServicesNasabah.ServiceUpdateNasabahById)
-	goji.Delete("/nasabah/:id", P_ServicesNasabah.ServiceDeleteNasabahById)
+	goji.Get("/services/nasabah", P_ServicesNasabah.ServiceGetNasabahAll)
+	goji.Get("/services/nasabah/:id", P_ServicesNasabah.ServiceGetNasabahById)
+	goji.Post("/services/nasabah/:data", P_ServicesNasabah.ServiceAddNasabah)
+	goji.Put("/services/nasabah/:data", P_ServicesNasabah.ServiceUpdateNasabahById)
+	goji.Delete("/services/nasabah/:id", P_ServicesNasabah.ServiceDeleteNasabahById)
+	goji.Post("/auth/nasabah/:data", P_ServicesNasabah.AuthNasabah)
 	goji.Serve()
 }
